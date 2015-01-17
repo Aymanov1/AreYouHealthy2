@@ -26,7 +26,8 @@ import java.util.concurrent.TimeUnit;
  */
 public class Respiration extends Activity implements View.OnClickListener{
 
-  
+
+    final CounterClass timer = new CounterClass(60000, 1000);
     Button stop, testPoulse,suivant;
     TextView compteur,question;
     EditText getpoulse;
@@ -45,9 +46,9 @@ public class Respiration extends Activity implements View.OnClickListener{
         stop.setOnClickListener(this);
         suivant.setOnClickListener(this);
         compteur.setText("00:01:00");
-        question.setText("Combien avez vous de RESPIRATION pendant une minute ??");
+        question.setText("how many times  do u breath for a minute ?? ??");
     }
-final CounterClass timer= new CounterClass(60000,1000);
+
     public void onClick(View v) {
 
         int i = v.getId();
@@ -64,6 +65,7 @@ final CounterClass timer= new CounterClass(60000,1000);
             Intent intent = new Intent(this, OtherTests.class);
             intent.putExtra("OtherTests", "OtherTests");
             startActivity(intent);
+            overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
 
 
         }

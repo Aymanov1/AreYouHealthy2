@@ -15,9 +15,10 @@
             android:layout_gravity="center"
             android:text="Other Tests"
             android:textColor="@color/black"
-            android:textSize="24dp" />
+            android:textSize="26dp"
+            android:textStyle="bold|italic" />
 
-        <LinearLayout
+    <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -31,7 +32,13 @@
                 android:textColor="@color/black"
                 android:textSize="16dp" />
 
-            <RadioGroup
+        <ImageButton
+            android:id="@+id/cvomit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/caution" />
+
+        <RadioGroup
                 android:id="@+id/radioGroup1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -41,18 +48,18 @@
                     android:id="@+id/v1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
                     android:text="@string/YES"
+                    android:textColor="@color/black"
                     />
 
                 <RadioButton
                     android:id="@+id/v2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:text="@string/NO" />
-            </RadioGroup>
-        </LinearLayout>
+                    android:text="@string/NO"
+                    android:textColor="@color/black" />
+        </RadioGroup>
+    </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -68,6 +75,12 @@
                 android:textColor="@color/black"
                 android:textSize="16dp" />
 
+            <ImageButton
+                android:id="@+id/cdiah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/caution" />
+
             <RadioGroup
                 android:id="@+id/radioGroup2"
                 android:layout_width="wrap_content"
@@ -78,15 +91,15 @@
                     android:id="@+id/ventre1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:text="@string/Diahrea" />
+                    android:text="@string/Diahrea"
+                    android:textColor="@color/black" />
 
                 <RadioButton
                     android:id="@+id/ventre2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:text="@string/Constipation" />
+                    android:text="@string/Constipation"
+                    android:textColor="@color/black" />
             </RadioGroup>
         </LinearLayout>
 
@@ -108,22 +121,22 @@
                 android:id="@+id/ache1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/backache" />
+                android:text="@string/backache"
+                android:textColor="@color/black" />
 
             <CheckBox
                 android:id="@+id/ache2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/headache" />
+                android:text="@string/headache"
+                android:textColor="@color/black" />
 
             <CheckBox
                 android:id="@+id/ache3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/chestache" />
+                android:text="@string/chestache"
+                android:textColor="@color/black" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -139,6 +152,13 @@
                 android:textColor="@color/black"
                 android:textSize="16dp" />
 
+            <ImageButton
+                android:id="@+id/cAnsomnia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/caution" />
+
+
             <RadioGroup
                 android:id="@+id/radioGroup5"
                 android:layout_width="wrap_content"
@@ -149,16 +169,16 @@
                     android:id="@+id/a1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
                     android:text="@string/YES"
+                    android:textColor="@color/black"
                     />
 
                 <RadioButton
                     android:id="@+id/a2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:text="@string/NO" />
+                    android:text="@string/NO"
+                    android:textColor="@color/black" />
             </RadioGroup>
         </LinearLayout>
         <LinearLayout
@@ -185,37 +205,40 @@
                     android:id="@+id/f1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
                     android:text="@string/YES"
+                    android:textColor="@color/black"
                     />
 
                 <RadioButton
                     android:id="@+id/f2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:text="@string/NO" />
+                    android:text="@string/NO"
+                    android:textColor="@color/black" />
             </RadioGroup>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_gravity="bottom"
             android:layout_margin="10sp"
-            android:layout_gravity="center"
+            android:orientation="horizontal"
             >
 
             <Button
                 android:id="@+id/annuler"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="right"
                 android:text="Annuler" />
 
             <Button
-                android:id="@+id/VALIDER"
+                android:id="@+id/valider"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
                 android:text="VALIDER" />
         </LinearLayout>
 

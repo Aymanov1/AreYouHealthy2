@@ -9,20 +9,23 @@
     android:orientation="vertical" 
               
 >
-    <TextView   
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="Medical-Tests"
         android:textSize="24dp"
-        android:layout_gravity="center"
     />
-    <LinearLayout   android:id="@+id/l2" 
+
+    <LinearLayout
+        android:id="@+id/l2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+        android:layout_gravity="center"
                     android:layout_margin="5sp"
-                    android:orientation="vertical"
-                    android:layout_gravity="center">
-        
+        android:orientation="vertical">
+
         <Button
             android:id="@+id/declancher"
             android:layout_width="fill_parent"
@@ -35,10 +38,8 @@
             android:layout_height="wrap_content"
             android:text="Annuler"
         />
-         
+
     </LinearLayout>
 
-    
-    
-    
+
 </LinearLayout>

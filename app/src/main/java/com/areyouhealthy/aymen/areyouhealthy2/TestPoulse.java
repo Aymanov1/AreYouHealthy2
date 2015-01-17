@@ -22,6 +22,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class TestPoulse extends Activity implements View.OnClickListener {
 
+    final CounterClass timer = new CounterClass(60000, 1000);
     Button stop, testPoulse,suivant;
     TextView compteur,question;
     EditText getpoulse;
@@ -40,9 +41,9 @@ public class TestPoulse extends Activity implements View.OnClickListener {
         stop.setOnClickListener(this);
         suivant.setOnClickListener(this);
         compteur.setText("00:01:00");
-        question.setText("Combien avez vous de POULS pendant une minute ??");
+        question.setText("how many heart pulse  do u have for a minute ??");
     }
-final CounterClass timer= new CounterClass(60000,1000);
+
     public void onClick(View v) {
 
         int i = v.getId();
@@ -60,7 +61,7 @@ final CounterClass timer= new CounterClass(60000,1000);
             Intent intent = new Intent(this, Respiration.class);
             intent.putExtra("TestPoulse", "Heartbeating");
             startActivity(intent);
-
+            overridePendingTransition(android.R.anim.slide_out_right, android.R.anim.slide_in_left);
 
         }
     }

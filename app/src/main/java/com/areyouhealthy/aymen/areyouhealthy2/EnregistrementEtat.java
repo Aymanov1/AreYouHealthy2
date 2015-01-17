@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 /**
  *
@@ -17,7 +18,7 @@ import android.widget.Button;
  */
 public class EnregistrementEtat extends Activity implements View.OnClickListener {
 
-    private Button declancher, annuler;
+    Button declancher, annuler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +38,10 @@ public class EnregistrementEtat extends Activity implements View.OnClickListener
             Intent intent = new Intent(this, TestPoulse.class);
             intent.putExtra("TestPoulse", "bonjour aymoun");
             startActivity(intent);
+            overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
 
-        } else if (i == R.id.annuler) {
+        } else if (i == R.id.annuler) {//narja3 lel app elli fatet
+            Toast.makeText(this, "Developed by AYMEN JALLABI & EMNA KACHOUT", Toast.LENGTH_SHORT).show();
 
         }
 
